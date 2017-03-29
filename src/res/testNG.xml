@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<suite name="testproj" parallel="false">
-    <test name="testDemo">
-        <!--<packages>-->
-        <!--<package name="com.testproj.Demo"/>-->
-        <!--</packages>-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite">
+    <parameter name="environment" value="main" />
+    <test name="Test1">
         <classes>
-            <class name="TestDemo"></class>
+            <class name="Mytest"/>
+            <class name="TestDemo">
+            <methods>
+                <include name="" />
+                <include name="testcase2" />
+                <!--<exclude name="testcase2"/>-->
+            </methods>
+            </class>
         </classes>
-    </test>
-</suite>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
